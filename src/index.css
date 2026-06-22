@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0.98 0.01 245;
+  --foreground: 0.19 0.03 252;
+  --card: 1 0 0;
+  --border: 0.88 0.03 248;
+  --primary: 0.55 0.19 245;
+  --primary-foreground: 0.99 0 0;
+  --accent: 0.69 0.16 170;
+  --muted-foreground: 0.46 0.03 252;
+  --gradient-hero:
+    radial-gradient(circle at 12% 18%, oklch(0.8 0.15 180 / 18%), transparent 34%),
+    radial-gradient(circle at 82% 22%, oklch(0.68 0.18 245 / 18%), transparent 30%),
+    linear-gradient(135deg, oklch(0.99 0.01 250), oklch(0.94 0.04 220));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: oklch(var(--background));
+  color: oklch(var(--foreground));
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.glass {
+  border: 1px solid oklch(var(--border) / 70%);
+  background: oklch(var(--card) / 70%);
+  box-shadow: 0 18px 55px oklch(0.2 0.05 245 / 10%);
+  backdrop-filter: blur(18px);
+}
+
+.gradient-text {
+  background: linear-gradient(110deg, oklch(var(--primary)), oklch(var(--accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(oklch(var(--foreground) / 6%) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(var(--foreground) / 6%) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
