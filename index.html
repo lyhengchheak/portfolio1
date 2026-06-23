@@ -8,9 +8,239 @@
       content="IT Application Support Specialist with experience in POS deployment, hardware integration, and backend development with Spring Boot and Laravel."
     />
     <title>Chheak Lyheng - IT Application Support Specialist</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header" id="siteHeader">
+      <div class="nav-wrap">
+        <a class="brand gradient-text" href="#home">CL.</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="hire-link" href="#contact">Hire Me</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="grid-bg"></div>
+        <div class="hero-bg"></div>
+        <div class="blur blur-left"></div>
+        <div class="blur blur-right"></div>
+
+        <div class="hero-content">
+          <div class="portrait-panel">
+            <span class="name-stroke">CHHEAK LYHENG</span>
+            <button class="portrait-button" id="openLightbox" type="button" aria-label="Open profile image">
+              <span class="portrait-glow"></span>
+              <span class="portrait-frame">
+                <img src="https://i.postimg.cc/HLT4Z4T0/IMG-9213.jpg" alt="Chheak Lyheng" />
+                <span class="zoom-icon">+</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="hero-copy">
+            <div class="status-pill"><span></span> Available for opportunities</div>
+            <p class="intro">I'm Chheak Lyheng!</p>
+            <p class="summary">
+              Delivering reliable IT solutions and seamless system support for business operations -
+              POS deployment, backend development, and end-to-end troubleshooting.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#skills">View My Skills <span>-></span></a>
+              <a class="button button-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="role-list" aria-label="Professional roles">
+          <p><span>(01)</span> POS Specialist</p>
+          <p><span>(02)</span> Backend Developer</p>
+          <p><span>(03)</span> IT Support</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="section-title">
+          <p class="eyebrow">* About Me</p>
+          <h2 class="gradient-text">Adaptable IT Professional</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass card-large">
+            <p>
+              I'm an adaptable IT graduate with strong hands-on experience in
+              <strong>POS system deployment and troubleshooting</strong>, hardware integration,
+              Windows OS installation and boot configuration, and remote technical support using
+              UltraViewer. I also build backend systems with <strong>Spring Boot</strong> and
+              <strong>Laravel</strong>.
+            </p>
+            <ul class="check-list">
+              <li>Problem-solving mindset for complex technical issues</li>
+              <li>Customer-focused IT support approach</li>
+              <li>Reduce system downtime, ensure business continuity</li>
+            </ul>
+          </article>
+          <div class="stat-grid">
+            <article class="glass stat-card"><span>POS Systems</span><strong>Deployment</strong></article>
+            <article class="glass stat-card"><span>Backend</span><strong>Spring Boot / Laravel</strong></article>
+            <article class="glass stat-card"><span>Remote Support</span><strong>UltraViewer</strong></article>
+            <article class="glass stat-card"><span>Hardware</span><strong>Integration</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="education">
+        <div class="section-title">
+          <p class="eyebrow">* Education</p>
+          <h2 class="gradient-text">Academic Journey</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item glass">
+            <span class="timeline-icon">ED</span>
+            <h3>Bachelor of Information Technology</h3>
+            <p>RUPP University</p>
+            <small>Completed: 02 April 2026</small>
+          </article>
+          <article class="timeline-item glass">
+            <span class="timeline-icon">AW</span>
+            <h3>Cisco Networking Academy Certification</h3>
+            <p>Cisco</p>
+            <small>Completed: 23 September 2024</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <div class="section-title">
+          <p class="eyebrow">* Experience</p>
+          <h2 class="gradient-text">Professional Work</h2>
+        </div>
+        <article class="glass experience-card">
+          <div class="experience-head">
+            <div>
+              <span class="work-icon">IT</span>
+              <div>
+                <h3>IT Application Support</h3>
+                <p>Tonaire Digital</p>
+              </div>
+            </div>
+            <span class="date-pill">11 May 2026 - 11 Nov 2026</span>
+          </div>
+          <ul class="responsibility-grid">
+            <li>POS system deployment and maintenance</li>
+            <li>Troubleshooting hardware/software issues</li>
+            <li>Supporting retail and e-commerce environments</li>
+            <li>Remote support using UltraViewer</li>
+            <li>Ensuring minimal downtime for business operations</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="section-title">
+          <p class="eyebrow">* Skills</p>
+          <h2 class="gradient-text">Technical Toolkit</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="glass skill-card">
+            <h3>Programming Languages</h3>
+            <div class="tags"><span>Java</span><span>PHP</span><span>Dart</span></div>
+          </article>
+          <article class="glass skill-card">
+            <h3>IT Support & Hardware</h3>
+            <div class="tags"><span>POS Setup & Configuration</span><span>Receipt Printer Integration</span><span>Windows Boot & OS Install</span></div>
+          </article>
+          <article class="glass skill-card">
+            <h3>Tools & Systems</h3>
+            <div class="tags"><span>UltraViewer</span><span>CentOS</span><span>Git</span><span>Android Studio</span></div>
+          </article>
+          <article class="glass skill-card">
+            <h3>Databases</h3>
+            <div class="tags"><span>MySQL</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="services">
+        <div class="section-title">
+          <p class="eyebrow">* Services</p>
+          <h2 class="gradient-text">What I Deliver</h2>
+        </div>
+        <div class="service-grid">
+          <article class="glass service-card"><span>AP</span><h3>IT Application Support & Troubleshooting</h3><p>Fast, structured resolution of application and system issues.</p></article>
+          <article class="glass service-card"><span>PS</span><h3>POS System Deployment & Maintenance</h3><p>End-to-end POS rollout, configuration and ongoing care.</p></article>
+          <article class="glass service-card"><span>HW</span><h3>Hardware Integration</h3><p>Receipt printers, POS terminals, and peripheral setup.</p></article>
+          <article class="glass service-card"><span>RS</span><h3>Remote Technical Support</h3><p>UltraViewer-powered remote assistance with minimal downtime.</p></article>
+          <article class="glass service-card"><span>BE</span><h3>Backend System Development</h3><p>Spring Boot and Laravel APIs and business logic.</p></article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="section-title">
+          <p class="eyebrow">* Portfolio</p>
+          <h2 class="gradient-text">Projects Coming Soon</h2>
+        </div>
+        <article class="glass project-card">
+          <div class="grid-bg"></div>
+          <div class="project-inner">
+            <span class="project-icon">&lt;/&gt;</span>
+            <h3 class="gradient-text">Under Construction</h3>
+            <p>
+              Case studies and project showcases are on the way. Check back soon for deep dives
+              into POS deployments and backend builds.
+            </p>
+            <div class="progress"><span></span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="section-title">
+          <p class="eyebrow">* Contact</p>
+          <h2 class="gradient-text">Let's Build Something</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-list">
+            <a class="glass contact-item" href="mailto:Chheaklyheng@gmail.com"><span>EM</span><div><small>Email</small><strong>Chheaklyheng@gmail.com</strong></div></a>
+            <a class="glass contact-item" href="tel:+85567560650"><span>PH</span><div><small>Phone</small><strong>067 560 650</strong></div></a>
+            <a class="glass contact-item" href="https://www.linkedin.com/in/chheak-lyheng-19839a2ab" target="_blank" rel="noreferrer"><span>IN</span><div><small>LinkedIn</small><strong>chheak-lyheng</strong></div></a>
+            <a class="glass contact-item" href="#contact"><span>LO</span><div><small>Location</small><strong>Terk Thla, Phnom Penh</strong></div></a>
+          </div>
+          <form class="glass contact-form" id="contactForm">
+            <label>
+              <input type="text" name="name" placeholder=" " required />
+              <span>Name</span>
+            </label>
+            <label>
+              <input type="email" name="email" placeholder=" " required />
+              <span>Email</span>
+            </label>
+            <label>
+              <textarea name="message" rows="4" placeholder=" " required></textarea>
+              <span>Message</span>
+            </label>
+            <button class="button button-primary" type="submit" id="sendButton">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Chheak Lyheng. All rights reserved.</p>
+      <p><span></span> Built with precision.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Close">x</button>
+      <img src="https://i.postimg.cc/HLT4Z4T0/IMG-9213.jpg" alt="Chheak Lyheng full view" />
+    </div>
+
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
