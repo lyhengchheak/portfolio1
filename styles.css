@@ -616,10 +616,22 @@ img {
   line-height: 1.65;
 }
 
+.project-grid {
+  display: grid;
+  gap: 24px;
+}
+
 .project-card {
   position: relative;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(63, 104, 216, 0.45);
+  box-shadow: 0 16px 36px rgba(18, 25, 45, 0.08);
 }
 
 .project-card .grid-bg {
@@ -630,25 +642,36 @@ img {
 
 .project-inner {
   position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 22px;
 }
 
 .project-icon {
   width: 64px;
   height: 64px;
-  margin: 0 auto 20px;
   border: 1px solid rgba(63, 104, 216, 0.4);
   border-radius: 20px;
   animation: float 5s ease-in-out infinite;
 }
 
+.project-copy small {
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .project-inner h3 {
-  margin: 0;
+  margin: 8px 0 0;
   font-size: 1.6rem;
 }
 
 .project-inner p {
-  width: min(100%, 480px);
-  margin: 16px auto 0;
+  max-width: 680px;
+  margin: 16px 0 0;
   color: var(--muted);
   line-height: 1.7;
 }
@@ -904,5 +927,9 @@ img {
   .project-card,
   .experience-card {
     padding: 24px;
+  }
+
+  .project-inner {
+    grid-template-columns: 1fr;
   }
 }

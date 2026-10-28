@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "push": "bash git-push.sh",
+    "git:push": "bash git-push.sh"
   },
   "dependencies": {},
   "devDependencies": {
